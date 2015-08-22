@@ -29,7 +29,7 @@
           "type": "virtualbox-ovf",
           "name" : "vEOS",
           "vm_name": "vEOS-{{user `version`}}",
-          "headless" : "True",
+          "headless" : "False",
           "source_path": "source/vEOS.ovf",
           "output_directory" : "vEOS-{{user `version`}}",
           "export_opts" : [ "--iso" ],
