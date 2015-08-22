@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# ansible
+useradd -d /persist/local/ansible -G eosadmin ansible
+
 # Install the insecure vagrant key
 sudo install -d -m 0700 /root/.ssh
 sudo cp /mnt/flash/vagrant.pub /root/.ssh/authorized_keys
